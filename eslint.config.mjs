@@ -6,7 +6,7 @@ export default withNuxt(
   // Allow trailing commas
   {
     rules: {
-      'comma-dangle': ['off', 'always-multiline'],
-    },
-  },
+      'comma-dangle': ['off', 'always-multiline']
+    }
+  }
 )

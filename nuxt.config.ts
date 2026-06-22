@@ -1,21 +1,18 @@
+/// <reference types="node" />
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@nuxt/eslint', '@nuxt/ui'],
   devtools: {
-    enabled: true,
+    enabled: true
   },
 
   css: ['~/assets/css/main.css'],
 
   runtimeConfig: {
     public: {
-      supabaseUrl: process.env.SUPABASE_URL,
-      supabaseKey: process.env.SUPABASE_KEY,
-    },
-  },
-
-  routeRules: {
-    '/': { prerender: true },
+      supabaseUrl: 'https://pddeugkwypmuobpihlcv.supabase.co',
+      supabaseKey: 'sb_publishable_-zWhrYfn-1VXpSKWUonAPQ_5GJZ4icQ'
+    }
   },
 
   compatibilityDate: '2025-01-15',
@@ -23,8 +20,8 @@ export default defineNuxtConfig({
     config: {
       stylistic: {
         commaDangle: 'never',
-        braceStyle: '1tbs',
-      },
-    },
-  },
+        braceStyle: '1tbs'
+      }
+    }
+  }
 })
