@@ -1,5 +1,6 @@
 <script setup lang="ts">
 definePageMeta({ layout: 'dashboard', middleware: 'auth' })
+useHead({ title: 'Settings' })
 
 const { baby, fetchBaby, updateBaby, uploadAvatar } = useLogs()
 const toast = useToast()

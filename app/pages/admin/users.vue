@@ -4,6 +4,7 @@ import type { TableColumn } from '@nuxt/ui'
 import type { Profile } from '~/composables/useAuth'
 
 definePageMeta({ layout: 'dashboard', middleware: 'admin' })
+useHead({ title: 'Users' })
 
 const supabase = useSupabase()
 const toast = useToast()

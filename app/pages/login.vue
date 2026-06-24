@@ -1,5 +1,6 @@
 <script setup lang="ts">
 definePageMeta({ middleware: 'guest' })
+useHead({ title: 'Sign in' })
 
 const { signIn } = useAuth()
 const toast = useToast()
