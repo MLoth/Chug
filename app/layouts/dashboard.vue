@@ -92,5 +92,6 @@ const isActive = (to: string) =>
     </UDashboardSidebar>
 
     <slot />
+    <CmdK />
   </UDashboardGroup>
 </template>

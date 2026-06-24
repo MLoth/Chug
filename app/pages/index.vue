@@ -5,6 +5,8 @@ definePageMeta({ layout: 'dashboard', middleware: 'auth' })
 
 const { baby, logs, fetchBaby, fetchLogs } = useLogs()
 
+useHead(computed(() => ({ title: baby.value?.name ?? 'Dashboard' })))
+
 const modalOpen = ref(false)
 const modalType = ref<LogType>('feeding')
 

@@ -2,6 +2,8 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+Always give one simple percentage for the certainty of an answer: eg. - 70%
+
 ## Commands
 
 ```bash

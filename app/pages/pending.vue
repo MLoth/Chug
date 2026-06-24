@@ -1,4 +1,6 @@
 <script setup lang="ts">
+useHead({ title: 'Awaiting approval' })
+
 const { user, profile, signOut, init } = useAuth()
 
 onMounted(async () => {
